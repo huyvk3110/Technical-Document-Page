@@ -1,0 +1,83 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0px;
+}
+
+nav header {
+    font-size: 20pt;
+    font-weight: normal;
+    padding: 20px 30px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0px;
+    height: 88%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.nav-link {
+    border-top: solid black 1px;
+    padding: 15px 30px;
+}
+
+.nav-link a {
+    color: black;
+    text-decoration: none;
+}
+
+.main-section {
+    padding: 20px 30px;
+}
+
+.main-section header{
+    font-size: 20pt;
+    font-weight: normal;   
+}
+
+.main-section p, .main-section article, .main-section li{
+    margin: 20px;
+}
+
+.main-section code {
+    display: block;
+    padding: 20px;
+    margin: 10px;
+    background: #f7f7f7;
+}
+
+#navbar {
+    position: fixed;
+    border-right: solid black 1px;
+    width: 300px;
+    height: 100%;
+    z-index: 1;
+}
+
+#main-doc {
+    position: absolute;
+    padding: 0px 320px;
+}
+
+@media only screen and (max-width: 800px) {
+    #navbar {
+        position: unset;
+        border: none;
+        width: 100%;
+        height: 300px;
+        margin: 0 auto;
+    }
+
+    nav header{
+        text-align: center;
+    }
+
+    nav ul {
+        border: solid black 1px;
+    }
+
+    #main-doc {
+        padding: 23px 30px;
+    }
+}
